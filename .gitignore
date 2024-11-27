@@ -1,7 +1,6 @@
 /.phpunit.cache
 /node_modules
-# /public/
-/crot/
+/public/
 /public/build
 /public/hot
 /public/storage
