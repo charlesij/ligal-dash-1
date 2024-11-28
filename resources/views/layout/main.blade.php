@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-width="fullwidth" data-menu-styles="light" data-toggled="close">
+<html lang="en" dir="ltr" data-nav-layout="vertical" data-theme-mode="light" data-header-styles="light" data-width="fullwidth" data-menu-styles="light" data-toggled="close" loader="disable">
   <head>
     <!-- Meta Data -->
     <meta charset="UTF-8">
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> Lintas Inovasi Global </title>
+    <title> Lintas Inovasi Global | Dashboard </title>
     <meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
     <meta name="Author" content="Wcsrm Software Private Limited">
     <meta name="keywords" content="lintas inovasi global, bootstrap template, admin panel bootstrap, bootstrap dashboard, admin, admin dashboard template, dashboard template, html css templates, dashboard, template dashboard,  bootstrap dashboard template, dashboard html css, bootstrap admin dashboard,  bootstrap admin, dashboard template, bootstrap5 admin template">
     
     <!-- Favicon -->
-    <link rel="icon" href="../assets/images/brand-logos/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ asset('/assets/images/brand-logos/favicon.ico') }}" type="image/x-icon">
     
     <!-- Choices JS -->
-    <script src="../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="{{ asset('/assets/libs/choices.js/public/assets/scripts/choices.min.js') }}"></script>
 
     <!-- Main Theme Js -->
-    <script src="../assets/js/main.js"></script>
+    <script src="{{ asset('/assets/js/main.js') }}"></script>
     
     <!-- Bootstrap Css -->
-    <link id="style" href="../assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <link id="style" href="{{ asset('/assets/libs/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" >
 
     <!-- Style Css -->
-    <link href="../assets/css/styles.css" rel="stylesheet" >
+    <link href="{{ asset('/assets/css/styles.css') }}" rel="stylesheet" >
 
     <!-- Icons Css -->
-    <link href="../assets/css/icons.css" rel="stylesheet" >
+    <link href="{{ asset('/assets/css/icons.css') }}" rel="stylesheet" >
 
     <!-- Node Waves Css -->
-    <link href="../assets/libs/node-waves/waves.min.css" rel="stylesheet" > 
+    <link href="{{ asset('/assets/libs/node-waves/waves.min.css') }}" rel="stylesheet" > 
 
     <!-- Simplebar Css -->
-    <link href="../assets/libs/simplebar/simplebar.min.css" rel="stylesheet" >
+    <link href="{{ asset('/assets/libs/simplebar/simplebar.min.css') }}" rel="stylesheet" >
 
     <!-- Swiper Css -->
-    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{{ asset('/assets/libs/swiper/swiper-bundle.min.css') }}">
     
     <!-- Color Picker Css -->
-    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
-    <link rel="stylesheet" href="../assets/libs/@simonwep/pickr/themes/nano.min.css">
+    <link rel="stylesheet" href="{{ asset('/assets/libs/flatpickr/flatpickr.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('/assets/libs/@simonwep/pickr/themes/nano.min.css') }}">
 
     <!-- Choices Css -->
-    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="{{ asset('/assets/libs/choices.js/public/assets/styles/choices.min.css') }}">
 
     <!-- FlatPickr CSS -->
-    <link rel="stylesheet" href="../assets/libs/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="{{ asset('/assets/libs/flatpickr/flatpickr.min.css') }}">
 
     <!-- Auto Complete CSS -->
-    <link rel="stylesheet" href="../assets/libs/@tarekraafat/autocomplete.js/css/autoComplete.css">
+    <link rel="stylesheet" href="{{ asset('/assets/libs/@tarekraafat/autocomplete.js/css/autoComplete.css') }}">
   </head>
 
   <body>
@@ -526,7 +526,7 @@
 
     <!-- Loader -->
     <div id="loader" >
-      <img src="../assets/images/media/loader.svg" alt="">
+      <img src="{{ asset('/assets/images/media/loader.svg') }}" alt="">
     </div>
     <!-- Loader -->
 
@@ -559,35 +559,34 @@
     <!-- Scroll To Top -->
 
     <!-- Popper JS -->
-    <script src="../assets/libs/@popperjs/core/umd/popper.min.js"></script>
+    <script src="{{ asset('/assets/libs/@popperjs/core/umd/popper.min.js') }}"></script>
 
     <!-- Bootstrap JS -->
-    <script src="../assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Defaultmenu JS -->
-    <script src="../assets/js/defaultmenu.min.js"></script>
+    <script src="{{ asset('/assets/js/defaultmenu.min.js') }}"></script>
 
     <!-- Node Waves JS-->
-    <script src="../assets/libs/node-waves/waves.min.js"></script>
+    <script src="{{ asset('/assets/libs/node-waves/waves.min.js') }}"></script>
 
     <!-- Sticky JS -->
-    <script src="../assets/js/sticky.js"></script>
+    <script src="{{ asset('/assets/js/sticky.js') }}"></script>
 
     <!-- Simplebar JS -->
-    <script src="../assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="../assets/js/simplebar.js"></script>
+    <script src="{{ asset('/assets/libs/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/simplebar.js') }}"></script>
 
     <!-- Auto Complete JS -->
-    <script src="../assets/libs/@tarekraafat/autocomplete.js/autoComplete.min.js"></script>
+    <script src="{{ asset('/assets/libs/@tarekraafat/autocomplete.js/autoComplete.min.js') }}"></script>
 
     <!-- Color Picker JS -->
-    <script src="../assets/libs/@simonwep/pickr/pickr.es5.min.js"></script>
+    <script src="{{ asset('/assets/libs/@simonwep/pickr/pickr.es5.min.js') }}"></script>
 
     <!-- Date & Time Picker JS -->
-    <script src="../assets/libs/flatpickr/flatpickr.min.js"></script>
+    <script src="{{ asset('/assets/libs/flatpickr/flatpickr.min.js') }}"></script>
 
-    <!-- Apex Charts JS -->
-    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
 
     @php
       $salesPage = request()->routeIs('sales');
@@ -606,70 +605,131 @@
       $podcastPage = request()->routeIs('podcast');
       $schoolPage = request()->routeIs('school');
       $socialMediaPage = request()->routeIs('social-media');
+      $fullCalendarPage = request()->routeIs('full-calendar');
+      $addProductPage = request()->routeIs('ecommerce-addproduct');
+      $sweetAlertsPage = request()->routeIs('sweet-alerts');
       $examplePage = 'example';
     @endphp
 
     @if($salesPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Sales Dashboard --> 
-      <script src="../assets/js/sales-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/sales-dashboard.js') }}"></script>
     @elseif($analyticsPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Analytics Dashboard --> 
-      <script src="../assets/js/analytics-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/analytics-dashboard.js') }}"></script>
     @elseif($ecommercePage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Ecommerce Dashboard --> 
-      <script src="../assets/js/ecommerce-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/ecommerce-dashboard.js') }}"></script>
     @elseif($crmPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- CRM Dashboard --> 
-      <script src="../assets/js/crm-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/crm-dashboard.js') }}"></script>
     @elseif($cryptoPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Swiper JS -->
-      <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+      <script src="{{ asset('/assets/libs/swiper/swiper-bundle.min.js') }}"></script>
       <!-- Crypto Dashboard --> 
-      <script src="../assets/js/crypto-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/crypto-dashboard.js') }}"></script>
     @elseif($nftPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Swiper JS -->
-      <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+      <script src="{{ asset('/assets/libs/swiper/swiper-bundle.min.js') }}"></script>
       <!-- NFT Dashboard --> 
-      <script src="../assets/js/nft-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/nft-dashboard.js') }}"></script>
     @elseif($projectsPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Projects Dashboard --> 
-      <script src="../assets/js/projects-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/projects-dashboard.js') }}"></script>
     @elseif($jobsPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Jobs Dashboard --> 
-      <script src="../assets/js/jobs-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/jobs-dashboard.js') }}"></script>
     @elseif($hrmPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- HRM Dashboard --> 
-      <script src="../assets/js/hrm-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/hrm-dashboard.js') }}"></script>
     @elseif($coursesPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Courses Dashboard --> 
-      <script src="../assets/js/courses-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/courses-dashboard.js') }}"></script>
     @elseif($stocksPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Swiper JS -->
-      <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+      <script src="{{ asset('/assets/libs/swiper/swiper-bundle.min.js') }}"></script>
       <!-- Stocks Dashboard --> 
-      <script src="../assets/js/stocks-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/stocks-dashboard.js') }}"></script>
     @elseif($medicalPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Medical Dashboard --> 
-      <script src="../assets/js/medical-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/medical-dashboard.js') }}"></script>
     @elseif($posSystemPage)
       <!-- Isotope-layout JS -->
-      <script src="../assets/libs/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="{{ asset('/assets/libs/isotope-layout/isotope.pkgd.min.js') }}"></script>
       <!-- Internal POS-Dashboard JS -->
-      <script src="../assets/js/pos-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/pos-dashboard.js') }}"></script>
     @elseif($podcastPage)
       <!-- Podcast dashboard -->
-      <script src="../assets/js/podcast-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/podcast-dashboard.js') }}"></script>
     @elseif($schoolPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- School dashboard -->
-      <script src="../assets/js/school-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/school-dashboard.js') }}"></script>
     @elseif($socialMediaPage)
+      <!-- Apex Charts JS -->
+      <script src="{{ asset('/assets/libs/apexcharts/apexcharts.min.js') }}"></script>
       <!-- Social Media dashboard -->
-      <script src="../assets/js/social-media-dashboard.js"></script>
+      <script src="{{ asset('/assets/js/social-media-dashboard.js') }}"></script>
+    @elseif($fullCalendarPage)
+      <!-- Moment JS -->
+      <script src="{{ asset('/assets/libs/moment/min/moment.min.js') }}"></script>
+      <!-- Fullcalendar JS -->
+      <script src="{{ asset('/assets/libs/fullcalendar/index.global.min.js') }}"></script>
+      <script src="{{ asset('/assets/js/fullcalendar.js') }}"></script>
+    @elseif($sweetAlertsPage)
+      <!-- Sweetalerts JS -->
+      <script src="{{ asset('/assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+      <script src="{{ asset('/assets/js/sweet-alerts.js') }}"></script>
+    @elseif($addProductPage)
+      <script src="{{ asset('/assets/libs/flatpickr/flatpickr.min.js') }}"></script>
+
+      <!-- Quill Editor JS -->
+      <script src="{{ asset('/assets/libs/quill/quill.js') }}"></script>
+
+      <!-- Filepond JS -->
+      <script src="{{ asset('/assets/libs/filepond/filepond.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-image-edit/filepond-plugin-image-edit.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-image-crop/filepond-plugin-image-crop.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-image-resize/filepond-plugin-image-resize.min.js') }}"></script>
+      <script src="{{ asset('/assets/libs/filepond-plugin-image-transform/filepond-plugin-image-transform.min.js') }}"></script>
+
+      <!-- Internal Add Products JS -->
+      <script src="{{ asset('/assets/js/add-products.js') }}"></script>
     @endif
     <!-- Custom JS -->
-    <script src="../assets/js/custom.js"></script>
+    <script src="{{ asset('/assets/js/custom.js') }}"></script>
 
     <!-- Custom-Switcher JS -->
-    <script src="../assets/js/custom-switcher.min.js"></script>
+    <script src="{{ asset('/assets/js/custom-switcher.min.js') }}"></script>
   </body>
 </html> 

@@ -1,13 +1,83 @@
+@php
+    $dashboardRouteLists = [
+        'sales',
+        'analytics',
+        'ecommerce',
+        'crm',
+        'crypto',
+        'nft',
+        'projects',
+        'jobs',
+        'hrm',
+        'courses',
+        'stocks',
+        'medical',
+        'pos-system',
+        'podcast',
+        'school',
+        'social-media',
+    ];
+    $ecommerceRouteLists = [
+        'ecommerce-addproduct',
+        'ecommerce-cart',
+        'ecommerce-checkout',
+        'ecommerce-editproduct',
+        'ecommerce-orderdetail',
+        'ecommerce-orders',
+        'ecommerce-products',
+        'ecommerce-productsdetails',
+        'ecommerce-productslists',
+        'ecommerce-wishlists',
+    ];
+    $projectsRouteLists = [
+        'projects-lists',
+        'projects-overview',
+        'projects-create',
+    ];
+    $taskRouteLists = [
+        'task-kanban-board',
+        'task-list-view',
+        'task-details',
+    ];
+    $jobsRouteLists = [
+        'jobs-details',
+        'jobs-search-company',
+        'jobs-search-jobs',
+        'jobs-post',
+        'jobs-lists',
+        'jobs-search-candidate',
+        'jobs-candidate-details',
+    ];
+    $nftRouteLists = [
+        'nft-market-place',
+        'nft-details',
+        'nft-create',
+        'nft-wallet-integration',
+        'nft-live-auction',
+    ];
+    $appsRouteLists = array_merge(
+        [
+        'full-calendar',
+        'gallery',
+        'sweet-alerts',
+        ], 
+        $ecommerceRouteLists, 
+        $projectsRouteLists,
+        $taskRouteLists,
+        $jobsRouteLists,
+        $nftRouteLists,
+    );
+@endphp
 <!-- Start::app-sidebar -->
 <aside class="app-sidebar sticky" id="sidebar">
 
   <!-- Start::main-sidebar-header -->
   <div class="main-sidebar-header">
 		<a href="{{ route('sales') }}" class="header-logo">
-			<img src="../assets/images/brand-logos/logo-ligal.png" alt="logo" class="desktop-logo">
-			<img src="../assets/images/brand-logos/logo-ligal-sm.png" alt="logo" class="toggle-dark">
-			<img src="../assets/images/brand-logos/logo-ligal.png" alt="logo" class="desktop-dark">
-			<img src="../assets/images/brand-logos/logo-ligal-sm.png" alt="logo" class="toggle-logo">
+			<img src="{{ asset('assets/images/brand-logos/logo-ligal.png') }}" alt="logo" class="desktop-logo">
+			<img src="{{ asset('assets/images/brand-logos/logo-ligal-sm.png') }}" alt="logo" class="toggle-dark">
+			<img src="{{ asset('assets/images/brand-logos/logo-ligal.png') }}" alt="logo" class="desktop-dark">
+			<img src="{{ asset('assets/images/brand-logos/logo-ligal-sm.png') }}" alt="logo" class="toggle-logo">
 		</a>
   </div>
   <!-- End::main-sidebar-header -->
@@ -26,33 +96,14 @@
               <!-- End::slide__category -->
 
               <!-- Start::slide -->
-              @php
-                $routeList = [
-                    'sales',
-                    'analytics',
-                    'ecommerce',
-                    'crm',
-                    'crypto',
-                    'nft',
-                    'projects',
-                    'jobs',
-                    'hrm',
-                    'courses',
-                    'stocks',
-                    'medical',
-                    'pos-system',
-                    'podcast',
-                    'school',
-                    'social-media',
-                ];
-              @endphp
-              <li class="slide has-sub {{ request()->routeIs($routeList) ? 'open' : '' }}">
-                  <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs($routeList) ? 'active' : '' }}">
+
+              <li class="slide has-sub {{ request()->routeIs($dashboardRouteLists) ? 'open' : '' }}">
+                  <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs($dashboardRouteLists) ? 'active' : '' }}">
                       <i class="ri-arrow-right-s-line side-menu__angle"></i>
                       <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M104,216V152h48v64h64V120a8,8,0,0,0-2.34-5.66l-80-80a8,8,0,0,0-11.32,0l-80,80A8,8,0,0,0,40,120v96Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                       <span class="side-menu__label">Dashboards</span>
                   </a>
-                  <ul class="slide-menu child1" style="{{ request()->routeIs($routeList) ? 'width:block' : '' }}">
+                  <ul class="slide-menu child1" style="{{ request()->routeIs($dashboardRouteLists) ? 'width:block' : '' }}">
                       <li class="slide side-menu__label1">
                           <a href="javascript:void(0)">Dashboards</a>
                       </li>
@@ -113,58 +164,58 @@
               <!-- End::slide__category -->
 
               <!-- Start::slide -->
-              <li class="slide has-sub">
-                  <a href="javascript:void(0);" class="side-menu__item">
+              <li class="slide has-sub {{ request()->routeIs($appsRouteLists) ? 'open' : '' }}">
+                  <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs($appsRouteLists) ? 'active' : '' }}">
                       <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="48" y="48" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="144" y="48" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="48" y="144" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="144" y="144" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                       <span class="side-menu__label">Apps</span>
                       <i class="ri-arrow-right-s-line side-menu__angle"></i>
                   </a>
-                  <ul class="slide-menu child1">
+                  <ul class="slide-menu child1" style="{{ request()->routeIs($appsRouteLists) ? 'width:block' : '' }}">
                       <li class="slide side-menu__label1">
                           <a href="javascript:void(0)">Apps</a>
                       </li>
                       <li class="slide">
-                          <a href="full-calendar.html" class="side-menu__item">Full Calendar</a>
+                          <a href="{{ route('full-calendar') }}" class="side-menu__item {{ request()->routeIs('full-calendar') ? 'active' : '' }}">Full Calendar</a>
                       </li>
                       <li class="slide">
-                          <a href="gallery.html" class="side-menu__item">Gallery</a>
+                          <a href="{{ route('gallery') }}" class="side-menu__item {{ request()->routeIs('gallery') ? 'active' : '' }}">Gallery</a>
                       </li>
                       <li class="slide">
-                          <a href="sweet_alerts.html" class="side-menu__item">Sweet Alerts</a>
+                          <a href="{{ route('sweet-alerts') }}" class="side-menu__item {{ request()->routeIs('sweet-alerts') ? 'active' : '' }}">Sweet Alerts</a>
                       </li>
                       <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">Ecommerce
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs($ecommerceRouteLists) ? 'active' : '' }}">Ecommerce
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs($ecommerceRouteLists) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="add-product.html" class="side-menu__item">Add Product</a>
+                                  <a href="{{ route('ecommerce-addproduct') }}" class="side-menu__item {{ request()->routeIs('ecommerce-addproduct') ? 'active' : '' }}">Add Product</a>
                               </li>
                               <li class="slide">
-                                  <a href="cart.html" class="side-menu__item">Cart</a>
+                                  <a href="{{ route('ecommerce-cart') }}" class="side-menu__item {{ request()->routeIs('ecommerce-cart') ? 'active' : '' }}">Cart</a>
                               </li>
                               <li class="slide">
-                                  <a href="checkout.html" class="side-menu__item">Checkout</a>
+                                  <a href="{{ route('ecommerce-checkout') }}" class="side-menu__item {{ request()->routeIs('ecommerce-checkout') ? 'active' : '' }}">Checkout</a>
                               </li>
                               <li class="slide">
-                                  <a href="edit-product.html" class="side-menu__item">Edit Product</a>
+                                  <a href="{{ route('ecommerce-editproduct') }}" class="side-menu__item {{ request()->routeIs('ecommerce-editproduct') ? 'active' : '' }}">Edit Product</a>
                               </li>
                               <li class="slide">
-                                  <a href="order-details.html" class="side-menu__item">Order Details</a>
+                                  <a href="{{ route('ecommerce-orderdetail') }}" class="side-menu__item {{ request()->routeIs('ecommerce-orderdetail') ? 'active' : '' }}">Order Details</a>
                               </li>
                               <li class="slide">
-                                  <a href="orders.html" class="side-menu__item">Orders</a>
+                                  <a href="{{ route('ecommerce-orders') }}" class="side-menu__item {{ request()->routeIs('ecommerce-orders') ? 'active' : '' }}">Orders</a>
                               </li>
                               <li class="slide">
-                                  <a href="products.html" class="side-menu__item">Products</a>
+                                  <a href="{{ route('ecommerce-products') }}" class="side-menu__item {{ request()->routeIs('ecommerce-products') ? 'active' : '' }}">Products</a>
                               </li>
                               <li class="slide">
-                                  <a href="product-details.html" class="side-menu__item">Products Details</a>
+                                  <a href="{{ route('ecommerce-productsdetails') }}" class="side-menu__item {{ request()->routeIs('ecommerce-productsdetails') ? 'active' : '' }}">Products Details</a>
                               </li>
                               <li class="slide">
-                                  <a href="products-list.html" class="side-menu__item">Products List</a>
+                                  <a href="{{ route('ecommerce-productslists') }}" class="side-menu__item {{ request()->routeIs('ecommerce-productslists') ? 'active' : '' }}">Products List</a>
                               </li>
                               <li class="slide">
-                                  <a href="wishlist.html" class="side-menu__item">WishList</a>
+                                  <a href="{{ route('ecommerce-wishlists') }}" class="side-menu__item {{ request()->routeIs('ecommerce-wishlists') ? 'active' : '' }}">WishList</a>
                               </li>
                           </ul>
                       </li>
