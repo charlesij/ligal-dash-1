@@ -425,7 +425,7 @@
                               <div class="d-flex align-items-center">
                                   <div class="lh-1">
                                       <span class="avatar avatar-xs avatar-rounded text-default">
-                                          <img src="../assets/images/flags/us_flag.jpg" alt="">
+                                          <img src="{{ asset('') }}/assets/images/flags/us_flag.jpg" alt="">
                                       </span>
                                   </div>
                                   <div class="ms-3 flex-fill lh-1">
@@ -440,7 +440,7 @@
                               <div class="d-flex align-items-center">
                                   <div class="lh-1">
                                       <span class="avatar avatar-xs avatar-rounded text-default">
-                                          <img src="../assets/images/flags/argentina_flag.jpg" alt="">
+                                          <img src="{{ asset('') }}/assets/images/flags/argentina_flag.jpg" alt="">
                                       </span>
                                   </div>
                                   <div class="ms-3 flex-fill lh-1">
@@ -455,7 +455,7 @@
                               <div class="d-flex align-items-center">
                                   <div class="lh-1">
                                       <span class="avatar avatar-xs avatar-rounded text-default">
-                                          <img src="../assets/images/flags/canada_flag.jpg" alt="">
+                                          <img src="{{ asset('') }}/assets/images/flags/canada_flag.jpg" alt="">
                                       </span>
                                   </div>
                                   <div class="ms-3 flex-fill lh-1">
@@ -470,7 +470,7 @@
                               <div class="d-flex align-items-center">
                                   <div class="lh-1">
                                       <span class="avatar avatar-xs avatar-rounded text-default">
-                                          <img src="../assets/images/flags/india_flag.jpg" alt="">
+                                          <img src="{{ asset('') }}/assets/images/flags/india_flag.jpg" alt="">
                                       </span>
                                   </div>
                                   <div class="ms-3 flex-fill lh-1">
@@ -485,7 +485,7 @@
                               <div class="d-flex align-items-center">
                                   <div class="lh-1">
                                       <span class="avatar avatar-xs avatar-rounded text-default">
-                                          <img src="../assets/images/flags/italy_flag.jpg" alt="">
+                                          <img src="{{ asset('') }}/assets/images/flags/italy_flag.jpg" alt="">
                                       </span>
                                   </div>
                                   <div class="ms-3 flex-fill lh-1">
@@ -500,7 +500,7 @@
                               <div class="d-flex align-items-center">
                                   <div class="lh-1">
                                       <span class="avatar avatar-xs avatar-rounded text-default">
-                                          <img src="../assets/images/flags/germany_flag.jpg" alt="">
+                                          <img src="{{ asset('') }}/assets/images/flags/germany_flag.jpg" alt="">
                                       </span>
                                   </div>
                                   <div class="ms-3 flex-fill lh-1">

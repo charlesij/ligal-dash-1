@@ -1,73 +1,7 @@
 @php
-    $dashboardRouteLists = [
-        'sales',
-        'analytics',
-        'ecommerce',
-        'crm',
-        'crypto',
-        'nft',
-        'projects',
-        'jobs',
-        'hrm',
-        'courses',
-        'stocks',
-        'medical',
-        'pos-system',
-        'podcast',
-        'school',
-        'social-media',
-    ];
-    $ecommerceRouteLists = [
-        'ecommerce-addproduct',
-        'ecommerce-cart',
-        'ecommerce-checkout',
-        'ecommerce-editproduct',
-        'ecommerce-orderdetail',
-        'ecommerce-orders',
-        'ecommerce-products',
-        'ecommerce-productsdetails',
-        'ecommerce-productslists',
-        'ecommerce-wishlists',
-    ];
-    $projectsRouteLists = [
-        'projects-lists',
-        'projects-overview',
-        'projects-create',
-    ];
-    $taskRouteLists = [
-        'task-kanban-board',
-        'task-list-view',
-        'task-details',
-    ];
-    $jobsRouteLists = [
-        'jobs-details',
-        'jobs-search-company',
-        'jobs-search-jobs',
-        'jobs-post',
-        'jobs-lists',
-        'jobs-search-candidate',
-        'jobs-candidate-details',
-    ];
-    $nftRouteLists = [
-        'nft-market-place',
-        'nft-details',
-        'nft-create',
-        'nft-wallet-integration',
-        'nft-live-auction',
-    ];
-    $appsRouteLists = array_merge(
-        [
-        'full-calendar',
-        'gallery',
-        'sweet-alerts',
-        ], 
-        $ecommerceRouteLists, 
-        $projectsRouteLists,
-        $taskRouteLists,
-        $jobsRouteLists,
-        $nftRouteLists,
-    );
+use App\Helpers\RouteHelper;
 @endphp
+
 <!-- Start::app-sidebar -->
 <aside class="app-sidebar sticky" id="sidebar">
 
@@ -97,13 +31,13 @@
 
               <!-- Start::slide -->
 
-              <li class="slide has-sub {{ request()->routeIs($dashboardRouteLists) ? 'open' : '' }}">
-                  <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs($dashboardRouteLists) ? 'active' : '' }}">
+              <li class="slide has-sub {{ request()->routeIs(RouteHelper::getDashboardRouteLists()) ? 'open' : '' }}">
+                  <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getDashboardRouteLists()) ? 'active' : '' }}">
                       <i class="ri-arrow-right-s-line side-menu__angle"></i>
                       <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M104,216V152h48v64h64V120a8,8,0,0,0-2.34-5.66l-80-80a8,8,0,0,0-11.32,0l-80,80A8,8,0,0,0,40,120v96Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                       <span class="side-menu__label">Dashboards</span>
                   </a>
-                  <ul class="slide-menu child1" style="{{ request()->routeIs($dashboardRouteLists) ? 'width:block' : '' }}">
+                  <ul class="slide-menu child1" style="{{ request()->routeIs(RouteHelper::getDashboardRouteLists()) ? 'display:block' : '' }}">
                       <li class="slide side-menu__label1">
                           <a href="javascript:void(0)">Dashboards</a>
                       </li>
@@ -164,13 +98,13 @@
               <!-- End::slide__category -->
 
               <!-- Start::slide -->
-              <li class="slide has-sub {{ request()->routeIs($appsRouteLists) ? 'open' : '' }}">
-                  <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs($appsRouteLists) ? 'active' : '' }}">
+              <li class="slide has-sub {{ request()->routeIs(RouteHelper::getAppsRouteLists()) ? 'open' : '' }}">
+                  <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getAppsRouteLists()) ? 'active' : '' }}">
                       <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="48" y="48" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="144" y="48" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="48" y="144" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="144" y="144" width="64" height="64" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                       <span class="side-menu__label">Apps</span>
                       <i class="ri-arrow-right-s-line side-menu__angle"></i>
                   </a>
-                  <ul class="slide-menu child1" style="{{ request()->routeIs($appsRouteLists) ? 'width:block' : '' }}">
+                  <ul class="slide-menu child1" style="{{ request()->routeIs(RouteHelper::getAppsRouteLists()) ? 'display:block' : '' }}">
                       <li class="slide side-menu__label1">
                           <a href="javascript:void(0)">Apps</a>
                       </li>
@@ -183,10 +117,10 @@
                       <li class="slide">
                           <a href="{{ route('sweet-alerts') }}" class="side-menu__item {{ request()->routeIs('sweet-alerts') ? 'active' : '' }}">Sweet Alerts</a>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs($ecommerceRouteLists) ? 'active' : '' }}">Ecommerce
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getEcommerceRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getEcommerceRouteLists()) ? 'active' : '' }}">Ecommerce
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2" style="{{ request()->routeIs($ecommerceRouteLists) ? 'display:block' : '' }}">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getEcommerceRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
                                   <a href="{{ route('ecommerce-addproduct') }}" class="side-menu__item {{ request()->routeIs('ecommerce-addproduct') ? 'active' : '' }}">Add Product</a>
                               </li>
@@ -219,120 +153,120 @@
                               </li>
                           </ul>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">Projects
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getProjectsRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getProjectsRouteLists()) ? 'active' : '' }}">Projects
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getProjectsRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="projects-list.html" class="side-menu__item">Projects List</a>
+                                  <a href="{{ route('projects-lists') }}" class="side-menu__item {{ request()->routeIs('projects-lists') ? 'active' : '' }}">Projects List</a>
                               </li>
                               <li class="slide">
-                                  <a href="projects-overview.html" class="side-menu__item">Project Overview</a>
+                                  <a href="{{ route('projects-overview') }}" class="side-menu__item {{ request()->routeIs('projects-overview') ? 'active' : '' }}">Project Overview</a>
                               </li>
                               <li class="slide">
-                                  <a href="projects-create.html" class="side-menu__item">Create Project</a>
+                                  <a href="{{ route('projects-create') }}" class="side-menu__item {{ request()->routeIs('projects-create') ? 'active' : '' }}">Create Project</a>
                               </li>
                           </ul>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">Task
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getTaskRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getTaskRouteLists()) ? 'active' : '' }}">Task
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getTaskRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="task-kanban-board.html" class="side-menu__item">Kanban Board</a>
+                                  <a href="{{ route('task-kanban-board') }}" class="side-menu__item {{ request()->routeIs('task-kanban-board') ? 'active' : '' }}">Kanban Board</a>
                               </li>
                               <li class="slide">
-                                  <a href="task-list-view.html" class="side-menu__item">List View</a>
+                                  <a href="{{ route('task-list-view') }}" class="side-menu__item {{ request()->routeIs('task-list-view') ? 'active' : '' }}">List View</a>
                               </li>
                               <li class="slide">
-                                  <a href="task-details.html" class="side-menu__item">Task Details</a>
+                                  <a href="{{ route('task-details') }}" class="side-menu__item {{ request()->routeIs('task-details') ? 'active' : '' }}">Task Details</a>
                               </li>
                           </ul>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">Jobs
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getJobsRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getJobsRouteLists()) ? 'active' : '' }}">Jobs
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getJobsRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="job-details.html" class="side-menu__item">Job Details</a>
+                                  <a href="{{ route('jobs-details') }}" class="side-menu__item {{ request()->routeIs('jobs-details') ? 'active' : '' }}">Job Details</a>
                               </li>
                               <li class="slide">
-                                  <a href="job-company-search.html" class="side-menu__item">Search Company</a>
+                                  <a href="{{ route('jobs-search-company') }}" class="side-menu__item {{ request()->routeIs('jobs-search-company') ? 'active' : '' }}">Search Company</a>
                               </li>
                               <li class="slide">
-                                  <a href="job-search.html" class="side-menu__item">Search Jobs</a>
+                                  <a href="{{ route('jobs-search-jobs') }}" class="side-menu__item {{ request()->routeIs('jobs-search-jobs') ? 'active' : '' }}">Search Jobs</a>
                               </li>
                               <li class="slide">
-                                  <a href="job-post.html" class="side-menu__item">Job Post</a>
+                                  <a href="{{ route('jobs-post') }}" class="side-menu__item {{ request()->routeIs('jobs-post') ? 'active' : '' }}">Job Post</a>
                               </li>
                               <li class="slide">
-                                  <a href="jobs-list.html" class="side-menu__item">Jobs List</a>
+                                  <a href="{{ route('jobs-lists') }}" class="side-menu__item {{ request()->routeIs('jobs-lists') ? 'active' : '' }}">Jobs List</a>
                               </li>
                               <li class="slide">
-                                  <a href="job-candidate-search.html" class="side-menu__item">Search Candidate</a>
+                                  <a href="{{ route('jobs-search-candidate') }}" class="side-menu__item {{ request()->routeIs('jobs-search-candidate') ? 'active' : '' }}">Search Candidate</a>
                               </li>
                               <li class="slide">
-                                  <a href="job-candidate-details.html" class="side-menu__item">Candidate Details</a>
+                                  <a href="{{ route('jobs-candidate-details') }}" class="side-menu__item {{ request()->routeIs('jobs-candidate-details') ? 'active' : '' }}">Candidate Details</a>
                               </li>
                           </ul>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">NFT
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getNftRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getNftRouteLists()) ? 'active' : '' }}">NFT
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getNftRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="nft-marketplace.html" class="side-menu__item">Market Place</a>
+                                  <a href="{{ route('nft-marketplace') }}" class="side-menu__item {{ request()->routeIs('nft-marketplace') ? 'active' : '' }}">Marketplace</a>
                               </li>
                               <li class="slide">
-                                  <a href="nft-details.html" class="side-menu__item">NFT Details</a>
+                                  <a href="{{ route('nft-details') }}" class="side-menu__item {{ request()->routeIs('nft-details') ? 'active' : '' }}">NFT Details</a>
                               </li>
                               <li class="slide">
-                                  <a href="nft-create.html" class="side-menu__item">Create NFT</a>
+                                  <a href="{{ route('nft-create') }}" class="side-menu__item {{ request()->routeIs('nft-create') ? 'active' : '' }}">Create NFT</a>
                               </li>
                               <li class="slide">
-                                  <a href="nft-wallet-integration.html" class="side-menu__item">Wallet Integration</a>
+                                  <a href="{{ route('nft-wallet-integration') }}" class="side-menu__item {{ request()->routeIs('nft-wallet-integration') ? 'active' : '' }}">Wallet Integration</a>
                               </li>
                               <li class="slide">
-                                  <a href="nft-live-auction.html" class="side-menu__item">Live Auction</a>
+                                  <a href="{{ route('nft-live-auction') }}" class="side-menu__item {{ request()->routeIs('nft-live-auction') ? 'active' : '' }}">Live Auction</a>
                               </li>
                           </ul>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">CRM
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getCrmRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getCrmRouteLists()) ? 'active' : '' }}">CRM
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getCrmRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="crm-contacts.html" class="side-menu__item">Contacts</a>
+                                  <a href="{{ route('crm-contacts') }}" class="side-menu__item {{ request()->routeIs('crm-contacts') ? 'active' : '' }}">Contacts</a>
                               </li>
                               <li class="slide">
-                                  <a href="crm-companies.html" class="side-menu__item">Companies</a>
+                                  <a href="{{ route('crm-companies') }}" class="side-menu__item {{ request()->routeIs('crm-companies') ? 'active' : '' }}">Companies</a>
                               </li>
                               <li class="slide">
-                                  <a href="crm-deals.html" class="side-menu__item">Deals</a>
+                                  <a href="{{ route('crm-deals') }}" class="side-menu__item {{ request()->routeIs('crm-deals') ? 'active' : '' }}">Deals</a>
                               </li>
                               <li class="slide">
-                                  <a href="crm-leads.html" class="side-menu__item">Leads</a>
+                                  <a href="{{ route('crm-leads') }}" class="side-menu__item {{ request()->routeIs('crm-leads') ? 'active' : '' }}">Leads</a>
                               </li>
                           </ul>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">Crypto
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getCryptoRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getCryptoRouteLists()) ? 'active' : '' }}">Crypto
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getCryptoRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="crypto-transactions.html" class="side-menu__item">Transactions</a>
+                                  <a href="{{ route('crypto-transactions') }}" class="side-menu__item {{ request()->routeIs('crypto-transactions') ? 'active' : '' }}">Transactions</a>
                               </li>
                               <li class="slide">
-                                  <a href="crypto-currency-exchange.html" class="side-menu__item">Currency Exchange</a>
+                                  <a href="{{ route('crypto-currency-exchange') }}" class="side-menu__item {{ request()->routeIs('crypto-currency-exchange') ? 'active' : '' }}">Currency Exchange</a>
                               </li>
                               <li class="slide">
-                                  <a href="crypto-buy_sell.html" class="side-menu__item">Buy & Sell</a>
+                                  <a href="{{ route('crypto-buy-sell') }}" class="side-menu__item {{ request()->routeIs('crypto-buy-sell') ? 'active' : '' }}">Buy & Sell</a>
                               </li>
                               <li class="slide">
-                                  <a href="crypto-marketcap.html" class="side-menu__item">Marketcap</a>
+                                  <a href="{{ route('crypto-marketcap') }}" class="side-menu__item {{ request()->routeIs('crypto-marketcap') ? 'active' : '' }}">Marketcap</a>
                               </li>
                               <li class="slide">
-                                  <a href="crypto-wallet.html" class="side-menu__item">Wallet</a>
+                                  <a href="{{ route('crypto-wallet') }}" class="side-menu__item {{ request()->routeIs('crypto-wallet') ? 'active' : '' }}">Wallet</a>
                               </li>
                           </ul>
                       </li>
@@ -395,17 +329,17 @@
                           <a href="javascript:void(0)">Authentication</a>
                       </li>
                       <li class="slide">
-                          <a href="coming-soon.html" class="side-menu__item">Coming Soon</a>
+                          <a href="{{ route('authentication-coming-soon') }}" class="side-menu__item">Coming Soon</a>
                       </li>
                       <li class="slide has-sub">
                           <a href="javascript:void(0);" class="side-menu__item">Create Password
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
                           <ul class="slide-menu child2">
                               <li class="slide">
-                                  <a href="create-password-basic.html" class="side-menu__item">Basic</a>
+                                  <a href="{{ route('authentication-create-password-basic') }}" class="side-menu__item">Basic</a>
                               </li>
                               <li class="slide">
-                                  <a href="create-password-cover.html" class="side-menu__item">Cover</a>
+                                  <a href="{{ route('authentication-create-password-cover') }}" class="side-menu__item">Cover</a>
                               </li>
                           </ul>
                       </li>      
@@ -414,10 +348,10 @@
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
                           <ul class="slide-menu child2">
                               <li class="slide">
-                                  <a href="lockscreen-basic.html" class="side-menu__item">Basic</a>
+                                  <a href="{{ route('authentication-lock-screen-basic') }}" class="side-menu__item">Basic</a>
                               </li>
                               <li class="slide">
-                                  <a href="lockscreen-cover.html" class="side-menu__item">Cover</a>
+                                  <a href="{{ route('authentication-lock-screen-cover') }}" class="side-menu__item">Cover</a>
                               </li>
                           </ul>
                       </li>     
@@ -426,10 +360,10 @@
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
                           <ul class="slide-menu child2">
                               <li class="slide">
-                                  <a href="reset-password-basic.html" class="side-menu__item">Basic</a>
+                                  <a href="{{ route('authentication-reset-password-basic') }}" class="side-menu__item">Basic</a>
                               </li>
                               <li class="slide">
-                                  <a href="reset-password-cover.html" class="side-menu__item">Cover</a>
+                                  <a href="{{ route('authentication-reset-password-cover') }}" class="side-menu__item">Cover</a>
                               </li>
                           </ul>
                       </li>     
@@ -438,10 +372,10 @@
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
                           <ul class="slide-menu child2">
                               <li class="slide">
-                                  <a href="sign-up-basic.html" class="side-menu__item">Basic</a>
+                                  <a href="{{ route('authentication-sign-up-basic') }}" class="side-menu__item">Basic</a>
                               </li>
                               <li class="slide">
-                                  <a href="sign-up-cover.html" class="side-menu__item">Cover</a>
+                                  <a href="{{ route('authentication-sign-up-cover') }}" class="side-menu__item">Cover</a>
                               </li>
                           </ul>
                       </li>  
@@ -450,10 +384,10 @@
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
                           <ul class="slide-menu child2">
                               <li class="slide">
-                                  <a href="sign-in-basic.html" class="side-menu__item">Basic</a>
+                                  <a href="{{ route('authentication-sign-in-basic') }}" class="side-menu__item">Basic</a>
                               </li>
                               <li class="slide">
-                                  <a href="sign-in-cover.html" class="side-menu__item">Cover</a>
+                                  <a href="{{ route('authentication-sign-in-cover') }}" class="side-menu__item">Cover</a>
                               </li>
                           </ul>
                       </li> 
@@ -462,15 +396,15 @@
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
                           <ul class="slide-menu child2">
                               <li class="slide">
-                                  <a href="two-step-verification-basic.html" class="side-menu__item">Basic</a>
+                                  <a href="{{ route('authentication-two-step-verification-basic') }}" class="side-menu__item">Basic</a>
                               </li>
                               <li class="slide">
-                                  <a href="two-step-verification-cover.html" class="side-menu__item">Cover</a>
+                                  <a href="{{ route('authentication-two-step-verification-cover') }}" class="side-menu__item">Cover</a>
                               </li>
                           </ul>
                       </li> 
                       <li class="slide">
-                          <a href="under-maintenance.html" class="side-menu__item">Under Maintenance</a>
+                          <a href="{{ route('authentication-maintenance') }}" class="side-menu__item">Under Maintenance</a>
                       </li>
                   </ul>
               </li>
@@ -488,13 +422,13 @@
                           <a href="javascript:void(0)">Error</a>
                       </li>
                       <li class="slide">
-                          <a href="401-error.html" class="side-menu__item">401 - Error</a>
+                          <a href="{{ route('error-401') }}" class="side-menu__item">401 - Error</a>
                       </li>
                       <li class="slide">
-                          <a href="404-error.html" class="side-menu__item">404 - Error</a>
+                          <a href="{{ route('error-404') }}" class="side-menu__item">404 - Error</a>
                       </li>
                       <li class="slide">
-                          <a href="500-error.html" class="side-menu__item">500 - Error</a>
+                          <a href="{{ route('error-500') }}" class="side-menu__item">500 - Error</a>
                       </li>
                   </ul>
               </li>

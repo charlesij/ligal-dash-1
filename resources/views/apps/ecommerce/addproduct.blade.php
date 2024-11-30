@@ -71,19 +71,19 @@
                                   <p class="fw-medium mb-3 fs-14">Select Images :</p>
                                   <div class="mb-3">
                                       <span class="avatar avatar-xl border me-2 bg-light">
-                                          <img src="{{ asset('/assets/images/ecommerce/png/1.png') }}" alt="" class="w-100 h-100">
+                                          <img src="{{ asset('') }}/assets/images/ecommerce/png/1.png" alt="" class="w-100 h-100">
                                           <a href="javascript:void(0);" class="badge rounded-pill bg-danger avatar-badge"><i class="fe fe-x"></i></a>
                                       </span>
                                       <span class="avatar avatar-xl border me-2 bg-light">
-                                          <img src="{{ asset('/assets/images/ecommerce/png/14.png') }}" alt="" class="w-100 h-100">
+                                          <img src="{{ asset('') }}/assets/images/ecommerce/png/14.png" alt="" class="w-100 h-100">
                                           <a href="javascript:void(0);" class="badge rounded-pill bg-danger avatar-badge"><i class="fe fe-x"></i></a>
                                       </span>
                                       <span class="avatar avatar-xl border me-2 bg-light">
-                                          <img src="{{ asset('/assets/images/ecommerce/png/31.png') }}" alt="" class="w-100 h-100">
+                                          <img src="{{ asset('') }}/assets/images/ecommerce/png/31.png" alt="" class="w-100 h-100">
                                           <a href="javascript:void(0);" class="badge rounded-pill bg-danger avatar-badge"><i class="fe fe-x"></i></a>
                                       </span>
                                       <span class="avatar avatar-xl border me-2 bg-light">
-                                          <img src="{{ asset('/assets/images/ecommerce/png/36.png') }}" alt="" class="w-100 h-100">
+                                          <img src="{{ asset('') }}/assets/images/ecommerce/png/36.png" alt="" class="w-100 h-100">
                                           <a href="javascript:void(0);" class="badge rounded-pill bg-danger avatar-badge"><i class="fe fe-x"></i></a>
                                       </span>
                                   </div>

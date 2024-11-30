@@ -280,7 +280,7 @@
 															<div class="d-flex align-items-center flex-wrap gap-2">
 																	<div class="lh-1">
 																			<span class="avatar avatar-md p-2 bg-light border avatar-rounded">
-																					<img src="../assets/images/flags/us_flag.jpg" alt="">
+																					<img src="{{ asset('') }}/assets/images/flags/us_flag.jpg" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill lh-1">
@@ -297,7 +297,7 @@
 															<div class="d-flex align-items-center flex-wrap gap-2">
 																	<div class="lh-1">
 																			<span class="avatar avatar-md p-2 bg-light border avatar-rounded">
-																					<img src="../assets/images/flags/germany_flag.jpg" alt="">
+																					<img src="{{ asset('') }}/assets/images/flags/germany_flag.jpg" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill lh-1">
@@ -314,7 +314,7 @@
 															<div class="d-flex align-items-center flex-wrap gap-2">
 																	<div class="lh-1">
 																			<span class="avatar avatar-md p-2 bg-light border avatar-rounded">
-																					<img src="../assets/images/flags/mexico_flag.jpg" alt="">
+																					<img src="{{ asset('') }}/assets/images/flags/mexico_flag.jpg" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill lh-1">
@@ -331,7 +331,7 @@
 															<div class="d-flex align-items-center flex-wrap gap-2">
 																	<div class="lh-1">
 																			<span class="avatar avatar-md p-2 bg-light border avatar-rounded">
-																					<img src="../assets/images/flags/uae_flag.jpg" alt="">
+																					<img src="{{ asset('') }}/assets/images/flags/uae_flag.jpg" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill lh-1">
@@ -348,7 +348,7 @@
 															<div class="d-flex align-items-center flex-wrap gap-2">
 																	<div class="lh-1">
 																			<span class="avatar avatar-md p-2 bg-light border avatar-rounded">
-																					<img src="../assets/images/flags/argentina_flag.jpg" alt="">
+																					<img src="{{ asset('') }}/assets/images/flags/argentina_flag.jpg" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill lh-1">
@@ -365,7 +365,7 @@
 															<div class="d-flex align-items-center flex-wrap gap-2">
 																	<div class="lh-1">
 																			<span class="avatar avatar-md p-2 bg-light border avatar-rounded">
-																					<img src="../assets/images/flags/russia_flag.jpg" alt="">
+																					<img src="{{ asset('') }}/assets/images/flags/russia_flag.jpg" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill lh-1">
@@ -671,7 +671,7 @@
 													<table class="table text-nowrap">
 															<thead>
 																	<tr>
-																			<th scope="row" class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob1" value="" aria-label="..."></th>
+																			<th scope="row" class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob1" value="" aria-label="{{ asset('') }}."></th>
 																			<th scope="col">Product</th>
 																			<th scope="col">Category</th>
 																			<th scope="col" class="text-center">Quantity</th>
@@ -684,10 +684,10 @@
 															</thead>
 															<tbody>
 																	<tr>
-																			<td class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob2" value="" aria-label="..."></td>
+																			<td class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob2" value="" aria-label="{{ asset('') }}."></td>
 																			<td>
 																					<div class="d-flex">
-																							<span class="avatar avatar-md bg-light"><img src="../assets/images/ecommerce/png/1.png" class="" alt="..."></span>
+																							<span class="avatar avatar-md bg-light"><img src="{{ asset('') }}/assets/images/ecommerce/png/1.png" class="" alt="{{ asset('') }}."></span>
 																							<div class="ms-2">
 																									<p class="fw-semibold mb-0 d-flex align-items-center"><a href="javascript:void(0);">Classic tufted leather sofa</a></p>
 																									<p class="fs-13 text-muted mb-0">Pixel</p>
@@ -704,7 +704,7 @@
 																					<div class="d-flex align-items-center gap-2">
 																							<div class="lh-1">
 																									<span class="avatar avatar-xs avatar-rounded">
-																											<img src="../assets/images/faces/1.jpg" alt="">
+																											<img src="{{ asset('') }}/assets/images/faces/1.jpg" alt="">
 																									</span>
 																							</div>
 																							<div>
@@ -727,10 +727,10 @@
 																			</td>
 																	</tr>
 																	<tr>
-																			<td class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob3" value="" aria-label="..." checked=""></td>
+																			<td class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob3" value="" aria-label="{{ asset('') }}." checked=""></td>
 																			<td>
 																					<div class="d-flex">
-																							<span class="avatar avatar-md bg-light"><img src="../assets/images/ecommerce/png/36.png" class="" alt="..."></span>
+																							<span class="avatar avatar-md bg-light"><img src="{{ asset('') }}/assets/images/ecommerce/png/36.png" class="" alt="{{ asset('') }}."></span>
 																							<div class="ms-2">
 																									<p class="fw-semibold mb-0 d-flex align-items-center"><a href="javascript:void(0);">Rose Flower Pot</a></p>
 																									<p class="fs-13 text-muted mb-0">Sonic</p>
@@ -747,7 +747,7 @@
 																					<div class="d-flex align-items-center gap-2">
 																							<div class="lh-1">
 																									<span class="avatar avatar-xs avatar-rounded">
-																											<img src="../assets/images/faces/2.jpg" alt="">
+																											<img src="{{ asset('') }}/assets/images/faces/2.jpg" alt="">
 																									</span>
 																							</div>
 																							<div>
@@ -772,10 +772,10 @@
 																			</td>
 																	</tr>
 																	<tr>
-																			<td class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob4" value="" aria-label="..." checked=""></td>
+																			<td class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob4" value="" aria-label="{{ asset('') }}." checked=""></td>
 																			<td>
 																					<div class="d-flex">
-																							<span class="avatar avatar-md bg-light"><img src="../assets/images/ecommerce/png/31.png" class="" alt="..."></span>
+																							<span class="avatar avatar-md bg-light"><img src="{{ asset('') }}/assets/images/ecommerce/png/31.png" class="" alt="{{ asset('') }}."></span>
 																							<div class="ms-2">
 																									<p class="fw-semibold mb-0 d-flex align-items-center"><a href="javascript:void(0);">Leather Handbag</a></p>
 																									<p class="fs-13 text-muted mb-0">Elite</p>
@@ -792,7 +792,7 @@
 																					<div class="d-flex align-items-center gap-2">
 																							<div class="lh-1">
 																									<span class="avatar avatar-xs avatar-rounded">
-																											<img src="../assets/images/faces/10.jpg" alt="">
+																											<img src="{{ asset('') }}/assets/images/faces/10.jpg" alt="">
 																									</span>
 																							</div>
 																							<div>
@@ -817,10 +817,10 @@
 																			</td>
 																	</tr>
 																	<tr>
-																			<td class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob5" value="" aria-label="..."></td>
+																			<td class="ps-4"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob5" value="" aria-label="{{ asset('') }}."></td>
 																			<td>
 																					<div class="d-flex">
-																							<span class="avatar avatar-md bg-light"><img src="../assets/images/ecommerce/png/14.png" class="" alt="..."></span>
+																							<span class="avatar avatar-md bg-light"><img src="{{ asset('') }}/assets/images/ecommerce/png/14.png" class="" alt="{{ asset('') }}."></span>
 																							<div class="ms-2">
 																									<p class="fw-semibold mb-0 d-flex align-items-center"><a href="javascript:void(0);">Polaroid Medium Camera</a></p>
 																									<p class="fs-13 text-muted mb-0">Bright</p>
@@ -837,7 +837,7 @@
 																					<div class="d-flex align-items-center gap-2">
 																							<div class="lh-1">
 																									<span class="avatar avatar-xs avatar-rounded">
-																											<img src="../assets/images/faces/3.jpg" alt="">
+																											<img src="{{ asset('') }}/assets/images/faces/3.jpg" alt="">
 																									</span>
 																							</div>
 																							<div>
@@ -862,10 +862,10 @@
 																			</td>
 																	</tr>
 																	<tr>
-																			<td class="ps-4 border-bottom-0"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob7" value="" aria-label="..."></td>
+																			<td class="ps-4 border-bottom-0"><input class="form-check-input" type="checkbox" id="checkboxNoLabeljob7" value="" aria-label="{{ asset('') }}."></td>
 																			<td class="border-bottom-0">
 																					<div class="d-flex">
-																							<span class="avatar avatar-md bg-light"><img src="../assets/images/ecommerce/png/13.png" class="" alt="..."></span>
+																							<span class="avatar avatar-md bg-light"><img src="{{ asset('') }}/assets/images/ecommerce/png/13.png" class="" alt="{{ asset('') }}."></span>
 																							<div class="ms-2">
 																									<p class="fw-semibold mb-0 d-flex align-items-center"><a href="javascript:void(0);">Digital Watch</a></p>
 																									<p class="fs-13 text-muted mb-0">Nova</p>
@@ -882,7 +882,7 @@
 																					<div class="d-flex align-items-center gap-2">
 																							<div class="lh-1">
 																									<span class="avatar avatar-xs avatar-rounded">
-																											<img src="../assets/images/faces/11.jpg" alt="">
+																											<img src="{{ asset('') }}/assets/images/faces/11.jpg" alt="">
 																									</span>
 																							</div>
 																							<div>
@@ -940,7 +940,7 @@
 															<div class="d-flex align-items-center gap-2 flex-wrap">
 																	<div>
 																			<span class="avatar avatar-md avatar-rounded bg-light p-2 border">
-																					<img src="../assets/images/browsers/chrome.png" alt="">
+																					<img src="{{ asset('') }}/assets/images/browsers/chrome.png" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill">
@@ -959,7 +959,7 @@
 															<div class="d-flex align-items-center gap-2 flex-wrap">
 																	<div>
 																			<span class="avatar avatar-md avatar-rounded bg-light p-2 border">
-																					<img src="../assets/images/browsers/edge.png" alt="">
+																					<img src="{{ asset('') }}/assets/images/browsers/edge.png" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill">
@@ -978,7 +978,7 @@
 															<div class="d-flex align-items-center gap-2 flex-wrap">
 																	<div>
 																			<span class="avatar avatar-md avatar-rounded bg-light p-2 border">
-																					<img src="../assets/images/browsers/firefox.png" alt="">
+																					<img src="{{ asset('') }}/assets/images/browsers/firefox.png" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill">
@@ -997,7 +997,7 @@
 															<div class="d-flex align-items-center gap-2 flex-wrap">
 																	<div>
 																			<span class="avatar avatar-md avatar-rounded bg-light p-2 border">
-																					<img src="../assets/images/browsers/safari.png" alt="">
+																					<img src="{{ asset('') }}/assets/images/browsers/safari.png" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill">
@@ -1016,7 +1016,7 @@
 															<div class="d-flex align-items-center gap-2 flex-wrap">
 																	<div>
 																			<span class="avatar avatar-md avatar-rounded bg-light p-2 border">
-																					<img src="../assets/images/browsers/uc.png" alt="">
+																					<img src="{{ asset('') }}/assets/images/browsers/uc.png" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill">
@@ -1035,7 +1035,7 @@
 															<div class="d-flex align-items-center gap-2 flex-wrap">
 																	<div>
 																			<span class="avatar avatar-md avatar-rounded bg-light p-2 border">
-																					<img src="../assets/images/browsers/opera.png" alt="">
+																					<img src="{{ asset('') }}/assets/images/browsers/opera.png" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill">
@@ -1054,7 +1054,7 @@
 															<div class="d-flex align-items-center gap-2 flex-wrap">
 																	<div>
 																			<span class="avatar avatar-md avatar-rounded bg-light p-2 border">
-																					<img src="../assets/images/browsers/samsung-internet.png" alt="">
+																					<img src="{{ asset('') }}/assets/images/browsers/samsung-internet.png" alt="">
 																			</span>
 																	</div>
 																	<div class="flex-fill">

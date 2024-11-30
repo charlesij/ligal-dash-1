@@ -43,7 +43,7 @@
                                       <button type="button" class="btn btn-light btn-w-md brn-wave mt-2">Let's Start</button>
                                   </div>
                                   <div class="col-lg-4">
-                                      <img src="../assets/images/media/media-67.png" class="img-fluid d-lg-block d-none" alt="">
+                                      <img src="{{ asset('') }}/assets/images/media/media-67.png" class="img-fluid d-lg-block d-none" alt="">
                                   </div>
                               </div>
                           </div>
@@ -347,7 +347,7 @@
                                           <div class="d-flex align-items-center gap-2">
                                               <div>
                                                   <span class="avatar avatar-sm avatar-rounded">
-                                                      <img src="../assets/images/faces/1.jpg" alt="" title="applicant">
+                                                      <img src="{{ asset('') }}/assets/images/faces/1.jpg" alt="" title="applicant">
                                                   </span>
                                               </div>
                                               <div>
@@ -386,7 +386,7 @@
                                           <div class="d-flex align-items-center gap-2">
                                               <div>
                                                   <span class="avatar avatar-sm avatar-rounded">
-                                                      <img src="../assets/images/faces/10.jpg" alt="" title="applicant">
+                                                      <img src="{{ asset('') }}/assets/images/faces/10.jpg" alt="" title="applicant">
                                                   </span>
                                               </div>
                                               <div>
@@ -425,7 +425,7 @@
                                           <div class="d-flex align-items-center gap-2">
                                               <div>
                                                   <span class="avatar avatar-sm avatar-rounded">
-                                                      <img src="../assets/images/faces/11.jpg" alt="" title="applicant">
+                                                      <img src="{{ asset('') }}/assets/images/faces/11.jpg" alt="" title="applicant">
                                                   </span>
                                               </div>
                                               <div>
@@ -464,7 +464,7 @@
                                           <div class="d-flex align-items-center gap-2">
                                               <div>
                                                   <span class="avatar avatar-sm avatar-rounded">
-                                                      <img src="../assets/images/faces/2.jpg" alt="" title="applicant">
+                                                      <img src="{{ asset('') }}/assets/images/faces/2.jpg" alt="" title="applicant">
                                                   </span>
                                               </div>
                                               <div>
@@ -503,7 +503,7 @@
                                           <div class="d-flex align-items-center gap-2">
                                               <div>
                                                   <span class="avatar avatar-sm avatar-rounded">
-                                                      <img src="../assets/images/faces/3.jpg" alt="" title="applicant">
+                                                      <img src="{{ asset('') }}/assets/images/faces/3.jpg" alt="" title="applicant">
                                                   </span>
                                               </div>
                                               <div>
@@ -542,7 +542,7 @@
                                           <div class="d-flex align-items-center gap-2">
                                               <div>
                                                   <span class="avatar avatar-sm avatar-rounded">
-                                                      <img src="../assets/images/faces/5.jpg" alt="" title="applicant">
+                                                      <img src="{{ asset('') }}/assets/images/faces/5.jpg" alt="" title="applicant">
                                                   </span>
                                               </div>
                                               <div>
@@ -643,7 +643,7 @@
                                           <div class="d-flex align-items-center lh-1">
                                               <div class="me-2">
                                                   <span class="avatar avatar-md">
-                                                      <img src="../assets/images/media/media-1.jpg" alt="">
+                                                      <img src="{{ asset('') }}/assets/images/media/media-1.jpg" alt="">
                                                   </span>
                                               </div>
                                               <div>
@@ -680,7 +680,7 @@
                                           <div class="d-flex align-items-center lh-1">
                                               <div class="me-2">
                                                   <span class="avatar avatar-md">
-                                                      <img src="../assets/images/media/media-4.jpg" alt="">
+                                                      <img src="{{ asset('') }}/assets/images/media/media-4.jpg" alt="">
                                                   </span>
                                               </div>
                                               <div>
@@ -717,7 +717,7 @@
                                           <div class="d-flex align-items-center lh-1">
                                               <div class="me-2">
                                                   <span class="avatar avatar-md">
-                                                      <img src="../assets/images/media/media-10.jpg" alt="">
+                                                      <img src="{{ asset('') }}/assets/images/media/media-10.jpg" alt="">
                                                   </span>
                                               </div>
                                               <div>
@@ -754,7 +754,7 @@
                                           <div class="d-flex align-items-center lh-1">
                                               <div class="me-2">
                                                   <span class="avatar avatar-md">
-                                                      <img src="../assets/images/media/media-15.jpg" alt="">
+                                                      <img src="{{ asset('') }}/assets/images/media/media-15.jpg" alt="">
                                                   </span>
                                               </div>
                                               <div>
@@ -791,7 +791,7 @@
                                           <div class="d-flex align-items-center lh-1">
                                               <div class="me-2">
                                                   <span class="avatar avatar-md">
-                                                      <img src="../assets/images/media/media-23.jpg" alt="">
+                                                      <img src="{{ asset('') }}/assets/images/media/media-23.jpg" alt="">
                                                   </span>
                                               </div>
                                               <div>
@@ -865,7 +865,7 @@
                                   <div class="d-flex flex-fill align-items-center">
                                       <div class="me-2">
                                           <span class="avatar avatar-sm avatar-rounded">
-                                              <img src="../assets/images/faces/2.jpg" alt="">
+                                              <img src="{{ asset('') }}/assets/images/faces/2.jpg" alt="">
                                           </span>
                                       </div>
                                       <div>
@@ -884,7 +884,7 @@
                                   <div class="d-flex flex-fill align-items-center">
                                       <div class="me-2">
                                           <span class="avatar avatar-sm avatar-rounded">
-                                              <img src="../assets/images/faces/12.jpg" alt="">
+                                              <img src="{{ asset('') }}/assets/images/faces/12.jpg" alt="">
                                           </span>
                                       </div>
                                       <div>
@@ -903,7 +903,7 @@
                                   <div class="d-flex flex-fill align-items-center">
                                       <div class="me-2">
                                           <span class="avatar avatar-sm avatar-rounded">
-                                              <img src="../assets/images/faces/13.jpg" alt="">
+                                              <img src="{{ asset('') }}/assets/images/faces/13.jpg" alt="">
                                           </span>
                                       </div>
                                       <div>
@@ -922,7 +922,7 @@
                                   <div class="d-flex flex-fill align-items-center">
                                       <div class="me-2">
                                           <span class="avatar avatar-sm avatar-rounded">
-                                              <img src="../assets/images/faces/3.jpg" alt="">
+                                              <img src="{{ asset('') }}/assets/images/faces/3.jpg" alt="">
                                           </span>
                                       </div>
                                       <div>
@@ -941,7 +941,7 @@
                                   <div class="d-flex flex-fill align-items-center">
                                       <div class="me-2">
                                           <span class="avatar avatar-sm avatar-rounded">
-                                              <img src="../assets/images/faces/4.jpg" alt="">
+                                              <img src="{{ asset('') }}/assets/images/faces/4.jpg" alt="">
                                           </span>
                                       </div>
                                       <div>
@@ -960,7 +960,7 @@
                                   <div class="d-flex flex-fill align-items-center">
                                       <div class="me-2">
                                           <span class="avatar avatar-sm avatar-rounded">
-                                              <img src="../assets/images/faces/14.jpg" alt="">
+                                              <img src="{{ asset('') }}/assets/images/faces/14.jpg" alt="">
                                           </span>
                                       </div>
                                       <div>
@@ -979,7 +979,7 @@
                                   <div class="d-flex flex-fill align-items-center">
                                       <div class="me-2">
                                           <span class="avatar avatar-sm avatar-rounded">
-                                              <img src="../assets/images/faces/5.jpg" alt="">
+                                              <img src="{{ asset('') }}/assets/images/faces/5.jpg" alt="">
                                           </span>
                                       </div>
                                       <div>

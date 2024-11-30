@@ -586,8 +586,6 @@
     <!-- Date & Time Picker JS -->
     <script src="{{ asset('/assets/libs/flatpickr/flatpickr.min.js') }}"></script>
 
-
-
     @php
       $salesPage = request()->routeIs('sales');
       $analyticsPage = request()->routeIs('analytics');
@@ -606,8 +604,8 @@
       $schoolPage = request()->routeIs('school');
       $socialMediaPage = request()->routeIs('social-media');
       $fullCalendarPage = request()->routeIs('full-calendar');
-      $addProductPage = request()->routeIs('ecommerce-addproduct');
       $sweetAlertsPage = request()->routeIs('sweet-alerts');
+      $addProductPage = request()->routeIs('ecommerce-addproduct');
       $examplePage = 'example';
     @endphp
 
@@ -701,10 +699,6 @@
       <!-- Fullcalendar JS -->
       <script src="{{ asset('/assets/libs/fullcalendar/index.global.min.js') }}"></script>
       <script src="{{ asset('/assets/js/fullcalendar.js') }}"></script>
-    @elseif($sweetAlertsPage)
-      <!-- Sweetalerts JS -->
-      <script src="{{ asset('/assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
-      <script src="{{ asset('/assets/js/sweet-alerts.js') }}"></script>
     @elseif($addProductPage)
       <script src="{{ asset('/assets/libs/flatpickr/flatpickr.min.js') }}"></script>
 
@@ -725,6 +719,11 @@
 
       <!-- Internal Add Products JS -->
       <script src="{{ asset('/assets/js/add-products.js') }}"></script>
+    @elseif($sweetAlertsPage)
+      <!-- Sweetalerts JS -->
+      <script src="{{ asset('/assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+      <script src="{{ asset('/assets/js/sweet-alerts.js') }}"></script>
+
     @endif
     <!-- Custom JS -->
     <script src="{{ asset('/assets/js/custom.js') }}"></script>

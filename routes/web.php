@@ -57,7 +57,7 @@ Route::get('/apps/jobs/post', goToPage('apps.jobs.post'))->name('jobs-post');
 Route::get('/apps/jobs/lists', goToPage('apps.jobs.lists'))->name('jobs-lists');
 Route::get('/apps/jobs/search-candidate', goToPage('apps.jobs.search-candidate'))->name('jobs-search-candidate');
 Route::get('/apps/jobs/candidate-details', goToPage('apps.jobs.candidate-details'))->name('jobs-candidate-details');
-Route::get('/apps/nft/market-place', goToPage('apps.nft.market-place'))->name('nft-market-place');
+Route::get('/apps/nft/marketplace', goToPage('apps.nft.marketplace'))->name('nft-marketplace');
 Route::get('/apps/nft/details', goToPage('apps.nft.details'))->name('nft-details');
 Route::get('/apps/nft/create', goToPage('apps.nft.create'))->name('nft-create');
 Route::get('/apps/nft/wallet-integration', goToPage('apps.nft.wallet-integration'))->name('nft-wallet-integration');
