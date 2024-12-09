@@ -435,99 +435,99 @@ use App\Helpers\RouteHelper;
               <!-- End::slide -->
 
               <!-- Start::slide -->
-              <li class="slide has-sub">
-                  <a href="javascript:void(0);" class="side-menu__item">
+              <li class="slide has-sub {{ request()->routeIs(RouteHelper::getPagesRouteLists()) ? 'open' : '' }}">
+                  <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getPagesRouteLists()) ? 'active' : '' }}">
                       <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="32" y="48" width="192" height="160" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="96" x2="176" y2="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="128" x2="176" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="80" y1="160" x2="176" y2="160" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                       <span class="side-menu__label">Pages</span>
                       <i class="ri-arrow-right-s-line side-menu__angle"></i>
                   </a>
-                  <ul class="slide-menu child1 pages-ul">
+                  <ul class="slide-menu child1 pages-ul" style="{{ request()->routeIs(RouteHelper::getPagesRouteLists()) ? 'display:block' : '' }}">
                       <li class="slide side-menu__label1">
                           <a href="javascript:void(0)">Pages</a>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">Blog
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getBlogsRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getBlogsRouteLists()) ? 'active' : '' }}">Blog
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getBlogsRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="blog.html" class="side-menu__item">Blog</a>
+                                  <a href="{{ route('pages-blog-index') }}" class="side-menu__item {{ request()->routeIs('pages-blog-index') ? 'active' : '' }}">Blog</a>
                               </li>
                               <li class="slide">
-                                  <a href="blog-details.html" class="side-menu__item">Blog Details</a>
+                                  <a href="{{ route('pages-blog-details') }}" class="side-menu__item {{ request()->routeIs('pages-blog-details') ? 'active' : '' }}">Blog Details</a>
                               </li>
                               <li class="slide">
-                                  <a href="blog-create.html" class="side-menu__item">Create Blog</a>
+                                  <a href="{{ route('pages-blog-create') }}" class="side-menu__item {{ request()->routeIs('pages-blog-create') ? 'active' : '' }}">Create Blog</a>
                               </li>
                           </ul>
                       </li>
                       <li class="slide">
-                          <a href="chat.html" class="side-menu__item">Chat</a>
+                          <a href="{{ route('pages-chat') }}" class="side-menu__item {{ request()->routeIs('pages-chat') ? 'active' : '' }}">Chat</a>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">Email
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getEmailRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getEmailRouteLists()) ? 'active' : '' }}">Email
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getEmailRouteLists()) ? 'display:block' : '' }}">
                               <li class="slide">
-                                  <a href="mail.html" class="side-menu__item">Mail App</a>
+                                  <a href="{{ route('pages-email-mail-app') }}" class="side-menu__item {{ request()->routeIs('pages-email-mail-app') ? 'active' : '' }}">Mail App</a>
                               </li>
                               <li class="slide">
-                                  <a href="mail-settings.html" class="side-menu__item">Mail Settings</a>
+                                  <a href="{{ route('pages-email-mail-settings') }}" class="side-menu__item {{ request()->routeIs('pages-email-mail-settings') ? 'active' : '' }}">Mail Settings</a>
                               </li>
                           </ul>
                       </li>
                       <li class="slide">
-                          <a href="empty.html" class="side-menu__item">Empty</a>
+                          <a href="{{ route('pages-empty') }}" class="side-menu__item {{ request()->routeIs('pages-empty') ? 'active' : '' }}">Empty</a>
                       </li>
                       <li class="slide">
-                          <a href="faq's.html" class="side-menu__item">FAQ's</a>
+                          <a href="{{ route('pages-faq') }}" class="side-menu__item {{ request()->routeIs('pages-faq') ? 'active' : '' }}">FAQ's</a>
                       </li>
                       <li class="slide">
-                          <a href="file-manager.html" class="side-menu__item">File Manager</a>
+                          <a href="{{ route('pages-file-manager') }}" class="side-menu__item {{ request()->routeIs('pages-file-manager') ? 'active' : '' }}">File Manager</a>
                       </li>
-                      <li class="slide has-sub">
-                          <a href="javascript:void(0);" class="side-menu__item">Invoice
+                      <li class="slide has-sub {{ request()->routeIs(RouteHelper::getInvoiceRouteLists()) ? 'open' : '' }}">
+                          <a href="javascript:void(0);" class="side-menu__item {{ request()->routeIs(RouteHelper::getInvoiceRouteLists()) ? 'active' : '' }}">Invoice
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
-                          <ul class="slide-menu child2">
+                          <ul class="slide-menu child2" style="{{ request()->routeIs(RouteHelper::getInvoiceRouteLists()) ? 'dipslay:block' : '' }}">
                               <li class="slide">
-                                  <a href="invoice-create.html" class="side-menu__item">Create Invoice</a>
+                                  <a href="{{ route('pages-invoice-create') }}" class="side-menu__item {{ request()->routeIs('pages-invoice-create') ? 'active' : '' }}">Create Invoice</a>
                               </li>
                               <li class="slide">
-                                  <a href="invoice-details.html" class="side-menu__item">Invoice Details</a>
+                                  <a href="{{ route('pages-invoice-details') }}" class="side-menu__item {{ request()->routeIs('pages-invoice-details') ? 'active' : '' }}">Invoice Details</a>
                               </li>
                               <li class="slide">
-                                  <a href="invoice-list.html" class="side-menu__item">Invoice List</a>
+                                  <a href="{{ route('pages-invoice-list') }}" class="side-menu__item {{ request()->routeIs('pages-invoice-list') ? 'active' : '' }}">Invoice List</a>
                               </li>
                           </ul>
                       </li>
                       <li class="slide">
-                          <a href="pricing.html" class="side-menu__item">Pricing</a>
+                          <a href="{{ route('pages-pricing') }}" class="side-menu__item {{ request()->routeIs('pages-pricing') ? 'active' : '' }}">Pricing</a>
                       </li>
                       <li class="slide">
-                          <a href="profile.html" class="side-menu__item">Profile</a>
+                          <a href="{{ route('pages-profile') }}" class="side-menu__item {{ request()->routeIs('pages-profile') ? 'active' : '' }}">Profile</a>
                       </li>
                       <li class="slide">
-                          <a href="profile-settings.html" class="side-menu__item">Profile Settings</a>
+                          <a href="{{ route('pages-profile-settings') }}" class="side-menu__item {{ request()->routeIs('pages-profile-settings') ? 'active' : '' }}">Profile Settings</a>
                       </li>
                       <li class="slide">
-                          <a href="landing.html" class="side-menu__item">Landing Page</a>
+                          <a href="{{ route('pages-landing-page') }}" class="side-menu__item {{ request()->routeIs('pages-landing-page') ? 'active' : '' }}">Landing Page</a>
                       </li>
                       <li class="slide">
-                          <a href="reviews.html" class="side-menu__item">Reviews</a>
+                          <a href="{{ route('pages-reviews') }}" class="side-menu__item {{ request()->routeIs('pages-reviews') ? 'active' : '' }}">Reviews</a>
                       </li>
                       <li class="slide">
-                          <a href="search-results.html" class="side-menu__item">Search</a>
+                          <a href="{{ route('pages-search') }}" class="side-menu__item {{ request()->routeIs('pages-search') ? 'active' : '' }}">Search</a>
                       </li>
                       <li class="slide">
-                          <a href="team.html" class="side-menu__item">Team</a>
+                          <a href="{{ route('pages-team') }}" class="side-menu__item {{ request()->routeIs('pages-team') ? 'active' : '' }}">Team</a>
                       </li>
                       <li class="slide">
-                          <a href="terms_conditions.html" class="side-menu__item">Terms & Conditions</a>
+                          <a href="{{ route('pages-terms-conditions') }}" class="side-menu__item {{ request()->routeIs('pages-terms-conditions') ? 'active' : '' }}">Terms & Conditions</a>
                       </li>
                       <li class="slide">
-                          <a href="timeline.html" class="side-menu__item">Timeline</a>
+                          <a href="{{ route('pages-timeline') }}" class="side-menu__item {{ request()->routeIs('pages-timeline') ? 'active' : '' }}">Timeline</a>
                       </li>
                       <li class="slide">
-                          <a href="to-do-list.html" class="side-menu__item">To Do List</a>
+                          <a href="{{ route('pages-todolist') }}" class="side-menu__item {{ request()->routeIs('pages-todolist') ? 'active' : '' }}">To Do List</a>
                       </li>
                   </ul>
               </li>
@@ -538,28 +538,28 @@ use App\Helpers\RouteHelper;
               <!-- End::slide__category -->
 
               <!-- Start::slide -->
-              <li class="slide has-sub">
-                  <a href="javascript:void(0);" class="side-menu__item">
+              <li class="slide has-sub  {{ request()->routeIs(RouteHelper::getFormsRouteLists()) ? 'open' : '' }}">
+                  <a href="javascript:void(0);" class="side-menu__item  {{ request()->routeIs(RouteHelper::getFormsRouteLists()) ? 'active' : '' }}">
                       <svg xmlns="http://www.w3.org/2000/svg" class="side-menu__icon" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><path d="M32,216V56a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8V216l-32-16-32,16-32-16L96,216,64,200Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="144" y1="112" x2="192" y2="112" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="144" y1="144" x2="192" y2="144" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="64" y="96" width="48" height="64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                       <span class="side-menu__label">Forms</span>
                       <i class="ri-arrow-right-s-line side-menu__angle"></i>
                   </a>
-                  <ul class="slide-menu child1">
+                  <ul class="slide-menu child1" style="{{ request()->routeIs(RouteHelper::getFormsRouteLists()) ? 'display:block' : ''}}">
                       <li class="slide side-menu__label1">
                           <a href="javascript:void(0)">Forms</a>
                       </li>
                       <li class="slide">
-                          <a href="form_advanced.html" class="side-menu__item">Form Advanced</a>
+                          <a href="{{ route('forms-advanced') }}" class="side-menu__item {{ request()->routeIs('forms-advanced') ? 'active' : ''}}">Form Advanced</a>
                       </li>
                       <li class="slide has-sub">
                           <a href="javascript:void(0);" class="side-menu__item">Form Elements
                               <i class="ri-arrow-right-s-line side-menu__angle"></i></a>
                           <ul class="slide-menu child2">
                               <li class="slide">
-                                  <a href="form_inputs.html" class="side-menu__item">Inputs</a>
+                                  <a href="{{ route('forms-elements-inputs') }}" class="side-menu__item {{ request()->routeIs('forms-elements-input') ? 'active' : '' }}">Inputs</a>
                               </li>
                               <li class="slide">
-                                  <a href="form_check_radios.html" class="side-menu__item">Checks & Radios</a>
+                                  <a href="{{ route('forms-elements-checksandradio') }}" class="side-menu__item {{ request()->routeIs('forms-elements-checksandradio') ? 'active' : '' }}">Checks & Radios</a>
                               </li>
                               <li class="slide">
                                   <a href="form_input_group.html" class="side-menu__item">Input Group</a>

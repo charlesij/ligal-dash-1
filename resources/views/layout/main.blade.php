@@ -606,6 +606,8 @@
       $fullCalendarPage = request()->routeIs('full-calendar');
       $sweetAlertsPage = request()->routeIs('sweet-alerts');
       $addProductPage = request()->routeIs('ecommerce-addproduct');
+      $pagesChatPage = request()->routeIs('pages-chat');
+      $formAdvancedPage = request()->routeIs('forms-advanced');
       $examplePage = 'example';
     @endphp
 
@@ -723,7 +725,16 @@
       <!-- Sweetalerts JS -->
       <script src="{{ asset('/assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
       <script src="{{ asset('/assets/js/sweet-alerts.js') }}"></script>
+    @elseif($pagesChatPage)
+      <!-- Emojji Picker JS -->
+      <script src="../assets/libs/fg-emoji-picker/fgEmojiPicker.js"></script>
+      <!-- Gallery JS -->
+      <script src="../assets/libs/glightbox/js/glightbox.min.js"></script>
+      <!-- Chat JS -->
+      <script src="../assets/js/chat.js"></script>
+    @elseif($formAdvancedPage)
 
+    
     @endif
     <!-- Custom JS -->
     <script src="{{ asset('/assets/js/custom.js') }}"></script>

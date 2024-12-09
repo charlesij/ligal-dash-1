@@ -116,4 +116,75 @@ class RouteHelper
       self::getCryptoRouteLists(),
     );
   }
+
+  public static function getBlogsRouteLists():array
+  {
+    return [
+      'pages-blog-index',
+      'pages-blog-details',
+      'pages-blog-create',
+    ];
+  }
+  public static function getEmailRouteLists():array
+  {
+    return [
+      'pages-email-mail-app',
+      'pages-email-mail-settings',
+    ];
+  }
+  public static function getInvoiceRouteLists():array
+  {
+    return [
+      'pages-invoice-create',
+      'pages-invoice-details',
+      'pages-invoice-list',
+    ];
+  }
+
+  public static function getPagesRouteLists():array
+  {
+    return array_merge(
+      [
+        'pages-chat',
+        'pages-empty',
+        'pages-faq',
+        'pages-file-manager',
+        'pages-pricing',
+        'pages-profile',
+        'pages-profile-settings',
+        'pages-landing-page',
+        'pages-reviews',
+        'pages-search',
+        'pages-team',
+        'pages-terms-conditions',
+        'pages-timeline',
+        'pages-todolist',
+      ],
+      self::getBlogsRouteLists(),
+      self::getEmailRouteLists(),
+      self::getInvoiceRouteLists(),
+    );
+  }
+
+  public static function getFormsRouteLists():array
+  {
+    return [
+      'forms-advanced',
+      'forms-elements-inputs',
+      'forms-elements-checksandradio',
+      'forms-elements-input-group',
+      'forms-elements-form-select',
+      'forms-elements-range-slider',
+      'forms-elements-input-masks',
+      'forms-elements-file-uploads',
+      'forms-elements-date-time-picker',
+      'forms-elements-color-pickers',
+      'forms-floating-label',
+      'forms-layout',
+      'forms-wizards',
+      'forms-quil-editor',
+      'forms-validation',
+      'forms-select2',
+    ];
+  }
 }
